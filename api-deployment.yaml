@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
   name: synergychat-api
   labels:
@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: synergychat-api
-    containers:
-    - name: synergychat
-      image: bootdotdev/synergychat-api:latest
+    spec:
+      containers:
+      - name: synergychat
+        image: bootdotdev/synergychat-api:latest
