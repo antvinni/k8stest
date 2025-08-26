@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: deployment
+metadata:
+  name: synergychat-api
+  labels:
+    app: synergychat-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: synergychat-api
+  template:
+    metadata:
+      labels:
+        app: synergychat-api
+    containers:
+    - name: synergychat
+      image: bootdotdev/synergychat-api:latest
