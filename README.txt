@@ -1,1 +1,1 @@
-Test various k8s configs with minikube
+Test various k8s configs with Minikube
